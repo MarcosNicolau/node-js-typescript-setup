@@ -4,7 +4,7 @@ This is the usual configuration I always end up doing when creating services wit
 
 ## How to run it
 
-Simply run this command: `yarn setup`. This command will initialize a repository, update all packages to their latest version and prepare husky and commitizen.
+First clone the project and then run this command: `yarn setup`. This command will initialize a repository, update all packages to their latest version and prepare husky and commitizen.
 
 ## What it will do for you
 
