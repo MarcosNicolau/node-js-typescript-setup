@@ -10,7 +10,7 @@
 		"prepare": "husky install",
 		"test": "node",
 		"cm": "cz",
-		"setup": "git init && npx npm-check-updates -u && yarn && husky install && commitizen init cz-conventional-changelog --yarn --dev --exact"
+		"setup": "rm -rf .git && git init && npx npm-check-updates -u && yarn && husky install && commitizen init cz-conventional-changelog --yarn --dev --exact"
 	},
 	"dependencies": {
 		"express": "^4.17.3"
