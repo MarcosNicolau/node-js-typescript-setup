@@ -1,10 +1,10 @@
-import express from "express";
-const app = express();
+import express, { Application } from "express";
+import { getHelloWord } from "controllers";
 
-const PORT = 5000;
+export const startServer = (app: Application) => {
+	const PORT = 5000;
+	app.get("/", getHelloWord);
+	app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
+};
 
-app.get("/", (req, res) => {
-	return res.send("Hello world!");
-});
-
-app.listen(PORT, () => console.log("app listening on port 5000"));
+startServer(express());
