@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "This is the common configuration for node js project with typescript I always do",
 	"main": "index.js",
+	"private": true,
 	"scripts": {
 		"start": "node ./dist/src/server",
 		"dev": "nodemon -r tsconfig-paths/register  ./src/server.ts",
