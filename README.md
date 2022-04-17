@@ -15,6 +15,8 @@ This configuration will setup:
 -   semantic-release
 -   husky, commitizen and .commitlint
 -   add some basic github workflows to automate semantic releasing
+-   ts-config paths
+-   basic jest configuration
 
 ## Can I contribute?
 
