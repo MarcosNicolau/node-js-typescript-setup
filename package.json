@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"private": true,
 	"scripts": {
-		"start": "node ./dist/src/server",
+		"start": "node  -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/server",
 		"dev": "nodemon -r tsconfig-paths/register  ./src/server.ts",
 		"build": "tsc",
 		"prepare": "husky install",
