@@ -1,6 +1,8 @@
-# Typescript Node js server setup
+# Typescript Node js setup
 
 This is the usual configuration I always end up doing when creating services with nodejs and typescript.
+
+You can also use it for a package.
 
 ## How to run it
 
@@ -12,11 +14,17 @@ This configuration will setup:
 
 -   eslint
 -   prettier
--   semantic-release
 -   husky, commitizen and .commitlint
+-   ts-config paths: added some basic paths in tsconfig.json, make sure you change it to your needs
+-   jest configuration
+-   [semantic-release](https://semantic-release.gitbook.io/semantic-release/): npm (won't publish), changelog, tag, and git
 -   add some basic github workflows to automate semantic releasing
--   ts-config paths
--   basic jest configuration
+
+## Use it to publish a package
+
+If you want to use this project to publish a package, change the package.json `private` field to `false`.
+
+If you whish to automate publishing for npm, add NPM_TOKEN var to the project secrets. [click here to read docs](https://github.com/semantic-release/npm)
 
 ## Can I contribute?
 
