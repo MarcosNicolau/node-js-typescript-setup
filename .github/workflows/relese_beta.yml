@@ -1,4 +1,4 @@
-name: Release
+name: release_beta
 
 on:
   push:
@@ -24,13 +24,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
+          cache: "cache"
       - uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
       - name: "Install"
-        run: npm install
+        run: yarn install
       - name: "Build"
-        run: npm run build
+        run: yarn run build
       - name: "Version"
         run: npx semantic-release
