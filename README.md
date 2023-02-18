@@ -26,6 +26,14 @@ If you want to use this project to publish a package, change the package.json `p
 
 If you whish to automate publishing for npm, add NPM_TOKEN var to the project secrets. [click here to read docs](https://github.com/semantic-release/npm)
 
+## A Comment about commitizen
+
+Commitizen is a cli tool that is a must have to me because it enforces a clear and solid patterns of commits following the commonly used angular guideline.
+
+Whenever you commit your code, run `yarn cm` and follow the tool steps.
+
+For more information access their repo [here](https://hola.com)
+
 ## Can I contribute?
 
 Yes of course you can, feel free to create any pr.
