@@ -21,7 +21,7 @@
 		"prepare": "husky install",
 		"test": "jest",
 		"cm": "cz",
-		"setup": "rm -rf .git && git init && npx npm-check-updates -u && yarn && husky install && commitizen init cz-conventional-changelog --yarn --dev --exact"
+		"setup": "rm -rf .git && git init && npx npm-check-updates -u && yarn && husky install && chmod u+x ./.husky/* && commitizen init cz-conventional-changelog --force --yarn --dev --exact"
 	},
 	"dependencies": {
 		"express": "^4.17.3"
@@ -34,6 +34,7 @@
 		"@types/express": "^4.17.13",
 		"@types/express-serve-static-core": "^4.17.28",
 		"@types/jest": "^27.4.1",
+		"@types/node": "^18.11.18",
 		"@typescript-eslint/eslint-plugin": "^5.17.0",
 		"@typescript-eslint/parser": "^5.17.0",
 		"commitizen": "^4.2.4",
