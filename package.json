@@ -21,7 +21,7 @@
 		"prepare": "husky install",
 		"test": "jest",
 		"cm": "cz",
-		"setup": "rm -rf .git && git init && npx npm-check-updates -u && yarn && husky install && chmod u+x ./.husky/* && commitizen init cz-conventional-changelog --force --yarn --dev --exact"
+		"setup": "./setup.sh"
 	},
 	"dependencies": {
 		"express": "^4.17.3"
