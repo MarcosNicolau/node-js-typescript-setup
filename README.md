@@ -1,3 +1,4 @@
+
 # Typescript Node js setup
 
 This is the usual configuration I always end up doing when creating services with nodejs and typescript.
@@ -6,7 +7,14 @@ You can also use it for a package.
 
 ## How to run it
 
-First clone the project and then run this command: `yarn setup`. This command will initialize a repository, update all packages to their latest version and prepare husky and commitizen.
+1. Clone the project: <br />
+   `git clone https://github.com/MarcosNicolau/node-js-typescript-setup ./<YOUR_DIRECTORY>`
+
+2. Give permission to the setup script: <br />
+   `sudo chmod +x ./setup.sh`
+
+3. Run setup: <br />
+   `yarn setup`
 
 ## What it will do for you
 
