@@ -1,4 +1,3 @@
-
 # Typescript Node js setup
 
 This is the usual configuration I always end up doing when creating services with nodejs and typescript.
@@ -27,6 +26,16 @@ This configuration will setup:
 -   jest configuration
 -   [semantic-release](https://semantic-release.gitbook.io/semantic-release/): npm (won't publish), changelog, tag, and git
 -   add some basic github workflows to automate semantic releasing
+
+## About setup script
+
+When running `yarn setup` you will be prompt to enter the basic package info and whether you would like to setup docker.
+
+### What does the docker setup do?
+
+1. Creates a Dockerfile
+2. Creates package scripts to manage docker actions
+3. Updates release workflow to include docker publish. Pushes the container to the GitHub container registry
 
 ## Use it to publish a package
 
